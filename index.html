@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L7 — L'Studi 7 · Andorra</title>
+  <meta name="description" content="Alquiler de equipos profesionales y booking de artistas en Andorra. Pioneer CDJ 3000, DJM V10, Technics 1210MK2. Vos llevás la música, nosotros los equipos.">
+  <link rel="preload" as="image" href="assets/images/hero-bg.jpg">
+  <meta property="og:title" content="L7 — L'Studi 7">
+  <meta property="og:description" content="Soluciones integrales para eventos. Alquiler de gear, booking de artistas y soporte técnico en Andorra.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">L7</a>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#equipos">Equipos</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="mobile-menu-close" id="menuClose" aria-label="Cerrar menú">✕</button>
+    <ul>
+      <li><a href="#servicios" class="mobile-link">Servicios</a></li>
+      <li><a href="#equipos" class="mobile-link">Equipos</a></li>
+      <li><a href="#nosotros" class="mobile-link">Nosotros</a></li>
+      <li><a href="#contacto" class="mobile-link">Contacto</a></li>
+    </ul>
+    <div class="mobile-menu-footer">
+      <a href="https://instagram.com/lestudi7" target="_blank" rel="noopener noreferrer">@lestudi7</a>
+      <span>Andorra</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <img class="hero-img" src="assets/images/hero-bg.jpg" alt="" aria-hidden="true">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="hero-tag">L'STUDI 7</span>
+        <span class="hero-sep">/</span>
+        <span class="hero-location">ANDORRA</span>
+      </div>
+
+      <div class="hero-title-clip">
+        <h1 class="hero-title">L7</h1>
+      </div>
+
+      <div class="hero-tagline-clip">
+        <p class="hero-tagline">Vos llevás la música,<br>nosotros los equipos.</p>
+      </div>
+
+      <div class="hero-actions">
+        <!-- TODO: reemplazar XXXXXXXXXX por el número de WhatsApp de L7 (ej: 376600123456) -->
+        <a href="https://wa.me/XXXXXXXXXX?text=Hola!%20Me%20interesa%20reservar%20una%20fecha%20con%20L7."
+           class="btn-primary" target="_blank" rel="noopener noreferrer">
+          RESERVAR FECHA
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#servicios" class="btn-ghost">Ver servicios</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MARQUEE
+  ============================================================ -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-inner">
+        <span>CDJ 3000</span><span class="dot">·</span>
+        <span>DJM 750MK2</span><span class="dot">·</span>
+        <span>DJM V10</span><span class="dot">·</span>
+        <span>TECHNICS 1210MK2</span><span class="dot">·</span>
+        <span>XDJ RR</span><span class="dot">·</span>
+        <span>ALQUILER PROFESIONAL</span><span class="dot">·</span>
+        <span>ANDORRA</span><span class="dot">·</span>
+        <span>BOOKING ARTISTAS</span><span class="dot">·</span>
+        <span>SOPORTE TÉCNICO</span><span class="dot">·</span>
+      </div>
+      <div class="marquee-inner" aria-hidden="true">
+        <span>CDJ 3000</span><span class="dot">·</span>
+        <span>DJM 750MK2</span><span class="dot">·</span>
+        <span>DJM V10</span><span class="dot">·</span>
+        <span>TECHNICS 1210MK2</span><span class="dot">·</span>
+        <span>XDJ RR</span><span class="dot">·</span>
+        <span>ALQUILER PROFESIONAL</span><span class="dot">·</span>
+        <span>ANDORRA</span><span class="dot">·</span>
+        <span>BOOKING ARTISTAS</span><span class="dot">·</span>
+        <span>SOPORTE TÉCNICO</span><span class="dot">·</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SERVICIOS
+  ============================================================ -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <header class="section-header reveal">
+        <span class="section-label">/ SERVICIOS</span>
+      </header>
+
+      <div class="services-grid">
+
+        <article class="service-card reveal">
+          <div class="service-num">01</div>
+          <div class="service-body">
+            <h3 class="service-title">Alquiler de<br>Equipos</h3>
+            <p class="service-desc">Gear profesional de primera línea para tu evento. Todo en perfecto estado técnico, siempre listo para sonar.</p>
+            <ul class="service-gear">
+              <li>Pioneer CDJ 3000</li>
+              <li>Pioneer DJM 750MK2</li>
+              <li>Pioneer DJM V10</li>
+              <li>Technics SL-1210MK2</li>
+              <li>Pioneer XDJ RR</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-num">02</div>
+          <div class="service-body">
+            <h3 class="service-title">Booking de<br>Artistas</h3>
+            <p class="service-desc">Gestión artística integral para eventos y hospitality. Conectamos el talento adecuado con cada experiencia, cuidando cada detalle.</p>
+            <a href="#contacto" class="service-link">Consultar disponibilidad →</a>
+          </div>
+        </article>
+
+        <article class="service-card reveal">
+          <div class="service-num">03</div>
+          <div class="service-body">
+            <h3 class="service-title">Soporte<br>Técnico</h3>
+            <p class="service-desc">Setup, operación y soporte en vivo. Desde la prueba de sonido hasta el último track — nos aseguramos de que todo suene perfecto.</p>
+            <a href="#contacto" class="service-link">Hablar con el equipo →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EQUIPOS
+  ============================================================ -->
+  <section class="equipment" id="equipos">
+    <div class="container">
+      <header class="section-header reveal">
+        <span class="section-label">/ EQUIPOS</span>
+        <span class="section-sub">Catálogo técnico</span>
+      </header>
+
+      <div class="equipment-grid">
+
+        <div class="eq-card reveal">
+          <div class="eq-top">
+            <span class="eq-category">REPRODUCTORES</span>
+            <span class="eq-brand">PIONEER DJ</span>
+          </div>
+          <div class="eq-name">CDJ 3000</div>
+          <div class="eq-specs">
+            <span>USB</span><span>DVS</span><span>HID</span><span>LINK</span>
+          </div>
+          <p class="eq-desc">El reproductor de cabina más avanzado del mercado. Pantalla táctil de 9", streaming, análisis de waveform en tiempo real.</p>
+        </div>
+
+        <div class="eq-card reveal">
+          <div class="eq-top">
+            <span class="eq-category">MIXER</span>
+            <span class="eq-brand">PIONEER DJ</span>
+          </div>
+          <div class="eq-name">DJM V10</div>
+          <div class="eq-specs">
+            <span>6CH</span><span>MASTER FX</span><span>DVS</span>
+          </div>
+          <p class="eq-desc">Mixer flagship. 6 canales, EQ de 4 bandas por canal, Beat FX y Master FX independientes.</p>
+        </div>
+
+        <div class="eq-card reveal">
+          <div class="eq-top">
+            <span class="eq-category">MIXER</span>
+            <span class="eq-brand">PIONEER DJ</span>
+          </div>
+          <div class="eq-name">DJM 750MK2</div>
+          <div class="eq-specs">
+            <span>4CH</span><span>DVS</span><span>SEND/RET</span>
+          </div>
+          <p class="eq-desc">Mixer de 4 canales. Send/Return para efectos externos, interfaz de audio a 96kHz/24bit.</p>
+        </div>
+
+        <div class="eq-card reveal">
+          <div class="eq-top">
+            <span class="eq-category">TORNAMESAS</span>
+            <span class="eq-brand">TECHNICS</span>
+          </div>
+          <div class="eq-name">SL-1210MK2</div>
+          <div class="eq-specs">
+            <span>DIRECT DRIVE</span><span>±8% PITCH</span>
+          </div>
+          <p class="eq-desc">El estándar de la industria desde 1972. Motor de tracción directa, torque máximo, la referencia en vinilo.</p>
+        </div>
+
+        <div class="eq-card reveal">
+          <div class="eq-top">
+            <span class="eq-category">CONTROLADORA</span>
+            <span class="eq-brand">PIONEER DJ</span>
+          </div>
+          <div class="eq-name">XDJ RR</div>
+          <div class="eq-specs">
+            <span>STANDALONE</span><span>2CH</span><span>REKORDBOX</span>
+          </div>
+          <p class="eq-desc">All-in-one standalone. Rekordbox nativo, pantallas duales. Ideal para venues sin rider técnico completo.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MANIFIESTO
+  ============================================================ -->
+  <section class="manifesto" id="nosotros">
+    <div class="container">
+      <div class="manifesto-inner">
+        <span class="section-label reveal">/ NOSOTROS</span>
+        <blockquote class="manifesto-text reveal">
+          Transformamos conceptos<br>
+          en experiencias a través<br>
+          de la música, la tecnología<br>
+          y una ejecución personalizada.
+        </blockquote>
+        <div class="manifesto-divider reveal"></div>
+        <p class="manifesto-sub reveal">
+          Somos L7. Una agencia con sede en Andorra especializada en soluciones integrales
+          para eventos de hospitality y cultura electrónica. Cada evento es único.
+          Cada configuración también.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACTO
+  ============================================================ -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <header class="section-header reveal">
+        <span class="section-label">/ CONTACTO</span>
+      </header>
+
+      <div class="contact-grid">
+
+        <!-- Form (Netlify Forms ready) -->
+        <div class="contact-form-wrap reveal">
+          <form
+            class="contact-form"
+            id="contactForm"
+            name="contacto"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contacto">
+            <input type="hidden" name="bot-field" style="display:none">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+              </div>
+              <div class="form-group">
+                <label for="evento">Tipo de evento</label>
+                <select id="evento" name="evento" required>
+                  <option value="" disabled selected>—</option>
+                  <option value="club">Club / Venue</option>
+                  <option value="privado">Evento privado</option>
+                  <option value="festival">Festival</option>
+                  <option value="hospitality">Hospitality</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="fecha">Fecha del evento</label>
+              <input type="date" id="fecha" name="fecha" required>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contanos sobre tu evento, el lugar y qué necesitás…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              ENVIAR CONSULTA
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <p class="form-success" id="formSuccess" aria-live="polite">
+              ✓ Mensaje enviado. Te contactamos a la brevedad.
+            </p>
+          </form>
+        </div>
+
+        <!-- Contact info -->
+        <aside class="contact-info reveal">
+          <div class="contact-block">
+            <span class="contact-label">INSTAGRAM</span>
+            <a href="https://instagram.com/lestudi7"
+               class="contact-link contact-link--large"
+               target="_blank"
+               rel="noopener noreferrer">
+              @lestudi7
+              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true">
+                <path d="M1.5 11.5L11.5 1.5M11.5 1.5H5.5M11.5 1.5v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="contact-block">
+            <span class="contact-label">WHATSAPP</span>
+            <!-- TODO: mismo número que en el hero -->
+            <a href="https://wa.me/XXXXXXXXXX?text=Hola!%20Me%20interesa%20reservar%20una%20fecha%20con%20L7."
+               class="contact-link"
+               target="_blank"
+               rel="noopener noreferrer">
+              Escribinos directo →
+            </a>
+          </div>
+
+          <div class="contact-block">
+            <span class="contact-label">BASE</span>
+            <span class="contact-text">Andorra</span>
+          </div>
+
+          <div class="contact-block">
+            <span class="contact-label">RESPUESTA</span>
+            <span class="contact-text contact-text--mono">En menos de 24h</span>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">L7</span>
+      <span class="footer-copy">© 2025 L'Studi 7 · Andorra</span>
+      <a href="https://instagram.com/lestudi7"
+         class="footer-ig"
+         target="_blank"
+         rel="noopener noreferrer">@lestudi7</a>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
