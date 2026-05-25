@@ -966,6 +966,12 @@ section { padding: clamp(5rem, 11vh, 9rem) 0; }
   color: var(--muted);
 }
 
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .footer-ig {
   font-family: var(--mono);
   font-size: 0.6rem;
@@ -976,6 +982,52 @@ section { padding: clamp(5rem, 11vh, 9rem) 0; }
 }
 
 .footer-ig:hover { color: var(--orange); }
+
+.footer-fung {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.footer-fung:hover { opacity: 1; }
+
+.footer-fung-label {
+  font-family: var(--mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.footer-fung-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.footer-fung-brand img {
+  display: block;
+  object-fit: contain;
+}
+
+.footer-fung-brand span {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 768px) {
+  .footer-right {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+  }
+}
 
 /* === RESPONSIVE =========================================== */
 
